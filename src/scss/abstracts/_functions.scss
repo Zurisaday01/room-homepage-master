@@ -1,0 +1,20 @@
+// ----------------------------------
+// GET COLOR ------------------------
+// ----------------------------------
+@function color($variant) {
+	@return map-get($color, $variant);
+}
+
+// ----------------------------------
+// GET FONT SIZE --------------------
+// ----------------------------------
+@function get-font-size($variant) {
+	@return map-get($font__size, $variant);
+}
+
+// ----------------------------------
+// GET FONT WEIGHT ------------------------
+// ----------------------------------
+@function get-font-weight($variant) {
+	@return map-get($font__weights, $variant);
+}

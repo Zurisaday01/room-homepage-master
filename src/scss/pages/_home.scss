@@ -1,0 +1,13 @@
+.section {
+	&__discover {
+		background-color: seagreen;
+		grid-column: -2 / -1;
+		grid-row: 1 / 3;
+	}
+
+	&__about {
+		background-color: slateblue;
+		grid-row: -2 / -1;
+		grid-column: 2 / 3;
+	}
+}

@@ -1,0 +1,11 @@
+.image {
+	&--black {
+		background-color: springgreen;
+		grid-column: 1 / 2;
+	}
+
+	&--white {
+		background-color: #fffd98;
+		grid-column: -2 / -1;
+	}
+}

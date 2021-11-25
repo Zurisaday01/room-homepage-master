@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+$breakpoints: (
+	'avena': (
+		max-width: 34.375em,
+	),
+) !default;
+
+@mixin respond($bp) {
+	//Recupera el valor de la clave
+	$value: map-get($breakpoints, $bp);
+
+	// Si la clave existe en el mapa
+	@if $value != null {
+		// Imprime una consula de medios basada en ese valor
+		@media only screen and #{inspect(map-get($breakpoints, $bp))} {
+			@content;
+		}
+	}
+
+	//Si la clave no existe en el mapa
+	@else {
+		@warn "Desafortunadamente, la clave no se encuentra en el mapa`#{$breakpoints}`. "
+        + "Por favor asegurese de que la clave se encuentre en el mapa `$breakpoints`";
+	}
+}
+
+// 1. Comprueba si el punto de interrupción solicitado existe en el mapa de puntos de interrupción.
+// 2. Si existe, imprime una consulta de medios basada en el valor del punto de interrupción solicitado
+// 3. Si no es así, advierte al usuario que verifique su código.
