@@ -15,12 +15,13 @@ html {
 body {
 	font-family: $font__family;
 	font-weight: get-font-weight(a);
-	font-size: get-font-size(body);
+	font-size: get-font-size(beta);
+	line-height: 1.5;
 	height: 100vh;
 }
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 29vw 3fr 1fr 32vw;
 	grid-template-rows: 7rem 55vh 1fr;
 }

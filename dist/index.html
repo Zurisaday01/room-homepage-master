@@ -23,44 +23,122 @@
 
 		<title>Frontend Mentor | Room homepage</title>
 
-		<style></style>
+		<script src="./main.js" defer></script>
 	</head>
 	<body class="container">
 		<!-- HEADER -->
 		<header class="header">
+			<img src="./logo.svg" alt="logo" class="logo" />
 			<!-- NAVIGATION -->
-			<nav class="navigation"></nav>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">home</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">shop</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">about</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<button class="navigation__toggle" id="nav-toggle">
+				<img src="./icon-hamburger.svg" alt="" class="navigation__ico" />
+			</button>
 		</header>
 
 		<!-- CAROUSEL -->
-		<div class="carousel"></div>
+		<div class="carousel">
+			<div class="carousel__main">
+				<div class="slide">
+					<img
+						class="slide__photo"
+						src="./desktop-image-hero-1.jpg"
+						alt="photo 1"
+					/>
+				</div>
+				<div class="slide">
+					<img
+						class="slide__photo"
+						src="./desktop-image-hero-2.jpg"
+						alt="photo 2"
+					/>
+				</div>
+				<div class="slide">
+					<img
+						class="slide__photo"
+						src="./desktop-image-hero-3.jpg"
+						alt="photo 3"
+					/>
+				</div>
+			</div>
+
+			<div class="carousel__btns">
+				<button class="carousel__btn carousel__btn--left">
+					<img src="./icon-angle-left.svg" alt="left arrow" />
+				</button>
+				<button class="carousel__btn carousel__btn--right">
+					<img src="./icon-angle-right.svg" alt="right arrow" />
+				</button>
+			</div>
+		</div>
 
 		<!-- SECTION DISCOVER -->
-		<section class="section section__discover"></section>
+		<section class="section section__discover">
+			<h1 class="heading heading--primary">
+				Discover innovative ways to decorate
+			</h1>
+			<p class="paragraph">
+				We provide unmatched quality, comfort, and style for property owners
+				across the country. Our experts combine form and function in bringing
+				your vision to life. Create a room in your own style with our collection
+				and make your property a reflection of you and what you love.
+			</p>
+			<button class="btn">
+				Shop now
+				<img src="./icon-arrow.svg" alt="black room" class="btn__icon" />
+			</button>
+		</section>
 
 		<!-- IMAGE -->
-		<div class="image image--black"></div>
+		<div class="image image--black">
+			<img src="./image-about-dark.jpg" alt="black room" class="image__photo" />
+		</div>
 
 		<!-- SECTION ABOUT -->
-		<section class="section section__about"></section>
+		<section class="section section__about">
+			<h2 class="heading heading--secondary">About our furniture</h2>
+			<p class="paragraph">
+				Our multifunctional collection blends design and function to suit your
+				individual taste. Make each room unique, or pick a cohesive theme that
+				best express your interests and what inspires you. Find the furniture
+				pieces you need, from traditional to contemporary styles or anything in
+				between. Product specialists are available to help you create your dream
+				space.
+			</p>
+		</section>
 
 		<!-- IMAGE -->
-		<div class="image image--white"></div>
+		<div class="image image--light">
+			<img
+				src="./image-about-light.jpg"
+				alt="white room"
+				class="image__photo"
+			/>
+		</div>
 
 		<!-- 
 
-  Home
-  Shop
-  About
-  Contact
+  
 
-  Discover innovative ways to decorate
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
 
-  Shop now
+  
 
   We are available all across the globe
 
@@ -78,12 +156,9 @@
 
   Shop now
 
-  About our furniture
+  
 
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
+
   
   --></body>
 </html>

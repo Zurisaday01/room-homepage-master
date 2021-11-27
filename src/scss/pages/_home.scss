@@ -1,13 +1,20 @@
 .section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	&__discover {
-		background-color: seagreen;
-		grid-column: -2 / -1;
+		grid-column: -3 / -1;
 		grid-row: 1 / 3;
+		padding: 0rem 8rem;
+		align-items: start;
+		gap: 2rem;
 	}
 
 	&__about {
-		background-color: slateblue;
 		grid-row: -2 / -1;
-		grid-column: 2 / 3;
+		grid-column: 2 / 4;
+		padding: 0rem 6rem;
+		gap: 1rem;
 	}
 }

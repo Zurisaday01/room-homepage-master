@@ -1,0 +1,43 @@
+.navigation {
+	&__list {
+		display: flex;
+		list-style: none;
+		gap: 3rem;
+		height: 100%;
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+			content: '';
+			height: 1.4px;
+			background-color: transparent;
+			width: 40%;
+			position: absolute;
+			bottom: -8px;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			&::after {
+				background-color: color(c);
+			}
+		}
+	}
+
+	&__link {
+		color: color(c);
+		text-decoration: none;
+	}
+
+	&__toggle {
+		display: none;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+}

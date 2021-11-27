@@ -1,0 +1,17 @@
+.heading {
+	&--primary {
+		font-size: get-font-size(alfa);
+		line-height: 1;
+		padding: 0;
+	}
+	&--secondary {
+		color: color(b);
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: get-font-size(omega);
+	}
+}
+
+.paragraph {
+	color: color(a);
+}

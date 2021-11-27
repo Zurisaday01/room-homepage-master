@@ -1,11 +1,16 @@
 .image {
+	overflow: hidden;
 	&--black {
-		background-color: springgreen;
 		grid-column: 1 / 2;
 	}
 
-	&--white {
-		background-color: #fffd98;
+	&--light {
 		grid-column: -2 / -1;
+	}
+
+	&__photo {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
 }
