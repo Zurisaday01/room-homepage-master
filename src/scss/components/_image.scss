@@ -2,10 +2,26 @@
 	overflow: hidden;
 	&--black {
 		grid-column: 1 / 2;
+		grid-row: -2 / -1;
+
+		@include respond(centeno) {
+			grid-column: 1 / -1;
+			grid-row: 4 / 5;
+		}
 	}
 
 	&--light {
 		grid-column: -2 / -1;
+		grid-row: -2 / -1;
+		@include respond(trigo) {
+			grid-column: 3 / 4;
+			grid-row: 3 / 4;
+		}
+
+		@include respond(centeno) {
+			grid-column: 1 / -1;
+			grid-row: -2 / -1;
+		}
 	}
 
 	&__photo {

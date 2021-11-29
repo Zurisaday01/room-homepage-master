@@ -1,4 +1,7 @@
 .logo {
 	height: 1.3rem;
 	margin-left: 6rem;
+	@include respond(cebada) {
+		margin: 0;
+	}
 }

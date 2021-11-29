@@ -24,4 +24,19 @@ body {
 	display: grid;
 	grid-template-columns: 29vw 3fr 1fr 32vw;
 	grid-template-rows: 7rem 55vh 1fr;
+
+	@include respond(trigo) {
+		grid-template-columns: 29vw 2fr 1fr;
+		grid-template-rows: 7rem 50vh 50vh 25rem;
+	}
+	@include respond(centeno) {
+		grid-template-columns: 100%;
+		grid-template-rows: 7rem 50vh max-content 70vw max-content 70vw;
+	}
+	@include respond(cebada) {
+		grid-template-rows: 10rem 50vh max-content 70vw max-content 70vw;
+	}
+	@include respond(mijo) {
+		grid-template-rows: 10rem 42vh max-content 70vw max-content 70vw;
+	}
 }

@@ -1,10 +1,19 @@
 .header {
-	// background-color: royalblue;
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	z-index: 200;
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
-	gap: 2rem;
+	gap: 3rem;
+	position: relative;
+
+	@include respond(centeno) {
+		gap: 5rem;
+		justify-content: start;
+	}
+	@include respond(cebada) {
+		justify-content: center;
+		align-items: center;
+	}
 }

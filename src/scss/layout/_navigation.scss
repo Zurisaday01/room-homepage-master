@@ -1,9 +1,30 @@
 .navigation {
+	position: relative;
+	z-index: 201;
+	height: 7rem;
+
+	@include respond(cebada) {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		display: flex;
+		justify-content: end;
+		padding-right: 6vw;
+		transform: translateY(-100%);
+		transition: all 0.3s;
+	}
+
 	&__list {
 		display: flex;
 		list-style: none;
 		gap: 3rem;
 		height: 100%;
+		align-items: end;
+
+		@include respond(cebada) {
+			align-items: center;
+		}
 	}
 
 	&__item {
@@ -29,8 +50,12 @@
 	}
 
 	&__link {
-		color: color(c);
 		text-decoration: none;
+		color: color(c);
+
+		@include respond(cebada) {
+			color: color(b);
+		}
 	}
 
 	&__toggle {
@@ -39,5 +64,32 @@
 		border: none;
 		outline: none;
 		cursor: pointer;
+		position: absolute;
+		left: 6vw;
+		z-index: 20000;
+
+		@include respond(cebada) {
+			display: block;
+		}
 	}
+}
+// before movile
+// hidden - nav
+
+// after movile
+// hidden - responsive cebada - logo
+// nav-header => header tag
+// show-nav => nav tag
+
+.hidden {
+	display: none;
+}
+
+.show-nav {
+	// -----------
+	transform: translateY(0%);
+	// -------------
+	background-color: color(c);
+
+	opacity: 1;
 }
